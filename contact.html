@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Dietitian Bhawana Sachan for nutrition consultations. Book appointment online or visit our clinic in Faridabad, Haryana.">
+    <title>Contact Us | BhawanaNutriFit - Book Appointment</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="BhawanaNutriFit Logo">
+            </a>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">&#9776;</button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch to start your health transformation journey</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p style="color: var(--text-light); margin-bottom: 30px;">Have questions about our services? Want to book a consultation? We'd love to hear from you.</p>
+
+                    <div class="contact-item">
+                        <div class="icon">&#9906;</div>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>A-2649, IIIrd Floor<br>Green Fields Colony<br>Faridabad, Haryana 121010</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon">&#9742;</div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p><a href="tel:+919811722287">(+91) 981-172-2287</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon">&#9993;</div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p><a href="mailto:bhawana.sachan78@gmail.com">bhawana.sachan78@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon">&#128337;</div>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Monday - Saturday: 10:00 AM - 7:00 PM<br>Sunday: By Appointment</p>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 30px;">
+                        <h4 style="margin-bottom: 15px;">Follow Us</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/DietitianBhawana" target="_blank" aria-label="Facebook" style="background: var(--primary-light); color: var(--primary);">f</a>
+                            <a href="https://www.instagram.com/bhawananutrifit/" target="_blank" aria-label="Instagram" style="background: var(--primary-light); color: var(--primary);">in</a>
+                            <a href="https://www.linkedin.com/in/dietitian-bhawana-sachan-9b1b4322a/" target="_blank" aria-label="LinkedIn" style="background: var(--primary-light); color: var(--primary);">Li</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3 style="margin-bottom: 20px;">Book an Appointment</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="weight-loss">Weight Loss</option>
+                                <option value="weight-gain">Weight Gain</option>
+                                <option value="diabetes">Diabetes Management</option>
+                                <option value="pcos">PCOS Diet</option>
+                                <option value="thyroid">Thyroid Management</option>
+                                <option value="heart">Heart Health</option>
+                                <option value="sports">Sports Nutrition</option>
+                                <option value="pregnancy">Pregnancy Nutrition</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required placeholder="Tell us about your health goals or any specific concerns..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section" style="background: var(--gray-100); padding: 40px 0;">
+        <div class="container">
+            <div style="border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow);">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.2724387688514!2d77.31!3d28.41!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDI0JzM2LjAiTiA3N8KwMTgnMzYuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                    width="100%"
+                    height="400"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Consultation -->
+    <section class="section" style="text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 2rem; margin-bottom: 20px;">Online Consultations Available</h2>
+            <p style="color: var(--text-light); max-width: 600px; margin: 0 auto 20px;">Can't visit in person? We offer online consultations for clients across India and worldwide. Get personalized nutrition guidance from the comfort of your home.</p>
+            <p style="color: var(--primary); font-weight: 600;">Video consultations via WhatsApp, Zoom, or Google Meet</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="images/logo.png" alt="BhawanaNutriFit">
+                    <p>Transform your health with personalized nutrition plans from one of India's most trusted dieticians.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/DietitianBhawana" target="_blank" aria-label="Facebook">f</a>
+                        <a href="https://www.instagram.com/bhawananutrifit/" target="_blank" aria-label="Instagram">in</a>
+                        <a href="https://www.linkedin.com/in/dietitian-bhawana-sachan-9b1b4322a/" target="_blank" aria-label="LinkedIn">Li</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Weight Loss</a></li>
+                        <li><a href="services.html">Diabetes Diet</a></li>
+                        <li><a href="services.html">PCOS Management</a></li>
+                        <li><a href="services.html">Sports Nutrition</a></li>
+                        <li><a href="services.html">Heart Health</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>A-2649, IIIrd Floor</li>
+                        <li>Green Fields Colony</li>
+                        <li>Faridabad, Haryana 121010</li>
+                        <li><a href="tel:+919811722287">+91 981-172-2287</a></li>
+                        <li><a href="mailto:bhawana.sachan78@gmail.com">bhawana.sachan78@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BhawanaNutriFit. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
