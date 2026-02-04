@@ -724,6 +724,29 @@ ul {
     }
 }
 
+/* JS Toggle class */
+.nav .dropdown-menu.show {
+    display: flex;
+}
+
+/* Mobile Dropdown Styles */
+@media (max-width: 768px) {
+    .nav .dropdown-menu {
+        position: relative;
+        /* Changed from static to relative for better control/z-index if needed */
+        top: 0;
+        box-shadow: none;
+        background-color: var(--gray-100);
+        /* Highlight submenu area */
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .nav .dropdown-menu a {
+        padding: 8px 0;
+    }
+}
+
 /* Page Header */
 .page-header {
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);

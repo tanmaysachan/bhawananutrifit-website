@@ -8,9 +8,37 @@ function toggleMenu() {
 document.addEventListener('click', function(event) {
     const nav = document.getElementById('nav');
     const menuBtn = document.querySelector('.mobile-menu-btn');
-
+    const dropdowns = document.querySelectorAll('.dropdown-menu');
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+    
+    // Close nav if clicked outside
     if (!nav.contains(event.target) && !menuBtn.contains(event.target)) {
         nav.classList.remove('active');
+        // Also close all dropdowns when closing nav
+        dropdowns.forEach(d => d.classList.remove('show'));
+    }
+
+    // Handle Dropdown Toggles (specifically for mobile/click interaction)
+    if (event.target.classList.contains('dropdown-toggle')) {
+        event.preventDefault(); // Stop link navigation
+        const submenu = event.target.nextElementSibling;
+        if (submenu && submenu.classList.contains('dropdown-menu')) {
+            // Toggle this one
+            submenu.classList.toggle('show');
+            
+            // Close other open dropdowns (if we had siblings, useful for future)
+            dropdowns.forEach(d => {
+                if (d !== submenu && d.classList.contains('show')) {
+                    d.classList.remove('show');
+                }
+            });
+        }
+    } else {
+        // If clicking anywhere else in nav, maybe close dropdowns? 
+        // For now, let's keep them open if clicking inside the dropdown itself
+        if (!event.target.closest('.dropdown')) {
+             dropdowns.forEach(d => d.classList.remove('show'));
+        }
     }
 });
 
