@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Dietitian Bhawana Sachan for nutrition consultations. Book appointment online or visit our clinic in Faridabad, Haryana.">
+    <meta name="description"
+        content="Contact Dietitian Bhawana Sachan for nutrition consultations. Book appointment online or visit our clinic in Faridabad, Haryana.">
     <title>Contact Us | BhawanaNutriFit - Book Appointment</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="images/logo.png" type="image/png">
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
@@ -18,7 +21,15 @@
             <nav class="nav" id="nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li class="dropdown">
+                        <a href="services.html">Services ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="service-weight-management.html">Weight Management</a></li>
+                            <li><a href="service-medical-conditions.html">Medical Conditions</a></li>
+                            <li><a href="service-lifestyle-wellness.html">Lifestyle & Wellness</a></li>
+                            <li><a href="service-beauty-appearance.html">Beauty & Appearance</a></li>
+                        </ul>
+                    </li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html" class="active">Contact</a></li>
@@ -42,7 +53,8 @@
             <div class="contact-grid">
                 <div class="contact-info">
                     <h3>Get In Touch</h3>
-                    <p style="color: var(--text-light); margin-bottom: 30px;">Have questions about our services? Want to book a consultation? We'd love to hear from you.</p>
+                    <p style="color: var(--text-light); margin-bottom: 30px;">Have questions about our services? Want to
+                        book a consultation? We'd love to hear from you.</p>
 
                     <div class="contact-item">
                         <div class="icon">&#9906;</div>
@@ -76,12 +88,53 @@
                         </div>
                     </div>
 
+                    <div style="margin-top: 30px; border-top: 1px solid var(--gray-200); padding-top: 30px;">
+                        <h3 style="margin-bottom: 20px;">Our Branch Clinics</h3>
+
+                        <div style="margin-bottom: 20px;">
+                            <h4 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 5px;">Branch 1 – Delhi
+                            </h4>
+                            <p style="color: var(--text-light); font-size: 0.95rem;">A-10, Ground Floor, Opposite Pillar
+                                No. 80, Vikas Marg, Swasthya Vihar, Delhi – 110092</p>
+                            <p style="font-weight: 500; font-size: 0.9rem; color: var(--text);">Every Thursday & Sunday
+                                | 9:00 AM – 3:00 PM</p>
+                        </div>
+
+                        <div style="margin-bottom: 20px;">
+                            <h4 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 5px;">Branch 2 –
+                                Faridabad</h4>
+                            <p style="color: var(--text-light); font-size: 0.95rem;">2156, P Basement, Sector 28,
+                                Faridabad – 121008</p>
+                            <p style="font-weight: 500; font-size: 0.9rem; color: var(--text);">Every Tuesday & Friday |
+                                9:00 AM – 3:00 PM</p>
+                        </div>
+
+                        <div style="margin-bottom: 20px;">
+                            <h4 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 5px;">Branch 3 – Noida
+                            </h4>
+                            <p style="color: var(--text-light); font-size: 0.95rem;">A-232, Basement, Sector 19, Noida –
+                                201301</p>
+                            <p style="font-weight: 500; font-size: 0.9rem; color: var(--text);">Every Wednesday &
+                                Saturday | 9:00 AM – 3:00 PM</p>
+                        </div>
+
+                        <p
+                            style="background: var(--primary-light); padding: 10px; border-radius: 4px; font-size: 0.9rem; color: var(--primary-dark);">
+                            <strong>Note:</strong> On remaining days, appointments are available at any clinic location
+                            with prior booking.
+                        </p>
+                    </div>
+
                     <div style="margin-top: 30px;">
                         <h4 style="margin-bottom: 15px;">Follow Us</h4>
                         <div class="social-links">
-                            <a href="https://www.facebook.com/DietitianBhawana" target="_blank" aria-label="Facebook" style="background: var(--primary-light); color: var(--primary);">f</a>
-                            <a href="https://www.instagram.com/bhawananutrifit/" target="_blank" aria-label="Instagram" style="background: var(--primary-light); color: var(--primary);">in</a>
-                            <a href="https://www.linkedin.com/in/dietitian-bhawana-sachan-9b1b4322a/" target="_blank" aria-label="LinkedIn" style="background: var(--primary-light); color: var(--primary);">Li</a>
+                            <a href="https://www.facebook.com/DietitianBhawana" target="_blank" aria-label="Facebook"
+                                style="background: var(--primary-light); color: var(--primary);">f</a>
+                            <a href="https://www.instagram.com/bhawananutrifit/" target="_blank" aria-label="Instagram"
+                                style="background: var(--primary-light); color: var(--primary);">in</a>
+                            <a href="https://www.linkedin.com/in/dietitian-bhawana-sachan-9b1b4322a/" target="_blank"
+                                aria-label="LinkedIn"
+                                style="background: var(--primary-light); color: var(--primary);">Li</a>
                         </div>
                     </div>
                 </div>
@@ -122,7 +175,8 @@
 
                         <div class="form-group">
                             <label for="message">Message *</label>
-                            <textarea id="message" name="message" required placeholder="Tell us about your health goals or any specific concerns..."></textarea>
+                            <textarea id="message" name="message" required
+                                placeholder="Tell us about your health goals or any specific concerns..."></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
@@ -138,11 +192,7 @@
             <div style="border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow);">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.2724387688514!2d77.31!3d28.41!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDI0JzM2LjAiTiA3N8KwMTgnMzYuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
-                    width="100%"
-                    height="400"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
@@ -153,8 +203,11 @@
     <section class="section" style="text-align: center;">
         <div class="container">
             <h2 style="font-size: 2rem; margin-bottom: 20px;">Online Consultations Available</h2>
-            <p style="color: var(--text-light); max-width: 600px; margin: 0 auto 20px;">Can't visit in person? We offer online consultations for clients across India and worldwide. Get personalized nutrition guidance from the comfort of your home.</p>
-            <p style="color: var(--primary); font-weight: 600;">Video consultations via WhatsApp, Zoom, or Google Meet</p>
+            <p style="color: var(--text-light); max-width: 600px; margin: 0 auto 20px;">Can't visit in person? We offer
+                online consultations for clients across India and worldwide. Get personalized nutrition guidance from
+                the comfort of your home.</p>
+            <p style="color: var(--primary); font-weight: 600;">Video consultations via WhatsApp, Zoom, or Google Meet
+            </p>
         </div>
     </section>
 
@@ -164,11 +217,14 @@
             <div class="footer-grid">
                 <div class="footer-about">
                     <img src="images/logo.png" alt="BhawanaNutriFit">
-                    <p>Transform your health with personalized nutrition plans from one of India's most trusted dieticians.</p>
+                    <p>Transform your health with personalized nutrition plans from one of India's most trusted
+                        dieticians.</p>
                     <div class="social-links">
                         <a href="https://www.facebook.com/DietitianBhawana" target="_blank" aria-label="Facebook">f</a>
-                        <a href="https://www.instagram.com/bhawananutrifit/" target="_blank" aria-label="Instagram">in</a>
-                        <a href="https://www.linkedin.com/in/dietitian-bhawana-sachan-9b1b4322a/" target="_blank" aria-label="LinkedIn">Li</a>
+                        <a href="https://www.instagram.com/bhawananutrifit/" target="_blank"
+                            aria-label="Instagram">in</a>
+                        <a href="https://www.linkedin.com/in/dietitian-bhawana-sachan-9b1b4322a/" target="_blank"
+                            aria-label="LinkedIn">Li</a>
                     </div>
                 </div>
                 <div>
@@ -184,24 +240,56 @@
                 <div>
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="services.html">Weight Loss</a></li>
-                        <li><a href="services.html">Diabetes Diet</a></li>
-                        <li><a href="services.html">PCOS Management</a></li>
-                        <li><a href="services.html">Sports Nutrition</a></li>
-                        <li><a href="services.html">Heart Health</a></li>
+                        <li><a href="service-weight-management.html">Weight Loss</a></li>
+                        <li><a href="service-medical-conditions.html">Diabetes Diet</a></li>
+                        <li><a href="service-medical-conditions.html">PCOS Management</a></li>
+                        <li><a href="service-lifestyle-wellness.html">Sports Nutrition</a></li>
+                        <li><a href="service-medical-conditions.html">Heart Health</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4>Contact</h4>
                     <ul>
-                        <li>A-2649, IIIrd Floor</li>
-                        <li>Green Fields Colony</li>
-                        <li>Faridabad, Haryana 121010</li>
-                        <li><a href="tel:+919811722287">+91 981-172-2287</a></li>
-                        <li><a href="mailto:bhawana.sachan78@gmail.com">bhawana.sachan78@gmail.com</a></li>
+                        <li><a href="tel:+919811722287"><svg class="footer-contact-icon"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                                </svg> +91 981-172-2287</a></li>
+                        <li><a href="mailto:bhawana.sachan78@gmail.com"><svg class="footer-contact-icon"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                </svg> bhawana.sachan78@gmail.com</a></li>
                     </ul>
                 </div>
             </div>
+
+            <div class="footer-locations-section">
+                <h3 class="footer-locations-title">Our Clinics</h3>
+                <div class="footer-locations-grid">
+                    <div class="footer-location-card">
+                        <h5>Main Clinic (Faridabad)</h5>
+                        <p>A-2649, IIIrd Floor, Green Fields Colony, Faridabad 121010</p>
+                        <p class="timings">Daily (except Branch days)</p>
+                    </div>
+                    <div class="footer-location-card">
+                        <h5>Delhi Branch</h5>
+                        <p>A-10, Ground Floor, Opp Pillar 80, Vikas Marg, Swasthya Vihar, Delhi 110092</p>
+                        <p class="timings">Thu & Sun: 9AM - 3PM</p>
+                    </div>
+                    <div class="footer-location-card">
+                        <h5>Faridabad Branch</h5>
+                        <p>2156, P Basement, Sector 28, Faridabad 121008</p>
+                        <p class="timings">Tue & Fri: 9AM - 3PM</p>
+                    </div>
+                    <div class="footer-location-card">
+                        <h5>Noida Branch</h5>
+                        <p>A-232, Basement, Sector 19, Noida 201301</p>
+                        <p class="timings">Wed & Sat: 9AM - 3PM</p>
+                    </div>
+                </div>
+            </div>
+
             <div class="footer-bottom">
                 <p>&copy; 2024 BhawanaNutriFit. All rights reserved.</p>
             </div>
@@ -210,4 +298,5 @@
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
