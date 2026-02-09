@@ -28,7 +28,7 @@ Static files - deploy to any hosting (Netlify, Vercel, GitHub Pages, traditional
 
 ```
 /
-├── index.html          # Homepage
+├── /          # Homepage
 ├── services.html       # All diet programs
 ├── about.html          # About Bhawana Sachan & team
 ├── contact.html        # Contact form & locations

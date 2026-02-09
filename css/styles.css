@@ -73,8 +73,8 @@ ul {
 }
 
 .logo img {
-    height: 70px;
-    /* Increased from 50px */
+    height: 90px;
+    /* Increased for better clarity and visibility */
     width: auto;
     /* Maintain aspect ratio */
 }
@@ -540,7 +540,7 @@ ul {
 }
 
 .footer-about img {
-    height: 60px;
+    height: 70px;
     margin-bottom: 20px;
 }
 
@@ -890,7 +890,8 @@ ul {
 
     .nav {
         position: fixed;
-        top: 80px;
+        top: 120px;
+        /* Match the new header height */
         left: 0;
         right: 0;
         background: var(--white);
@@ -935,6 +936,11 @@ ul {
 
     .experience-badges {
         flex-direction: column;
+    }
+
+    .logo img {
+        height: 70px;
+        /* Slightly smaller on mobile */
     }
 }
 
