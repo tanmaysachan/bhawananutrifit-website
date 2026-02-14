@@ -5,12 +5,12 @@ function toggleMenu() {
 }
 
 // Close mobile menu when clicking outside
-document.addEventListener('click', function(event) {
+document.addEventListener('click', function (event) {
     const nav = document.getElementById('nav');
     const menuBtn = document.querySelector('.mobile-menu-btn');
     const dropdowns = document.querySelectorAll('.dropdown-menu');
     const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
-    
+
     // Close nav if clicked outside
     if (!nav.contains(event.target) && !menuBtn.contains(event.target)) {
         nav.classList.remove('active');
@@ -25,7 +25,7 @@ document.addEventListener('click', function(event) {
         if (submenu && submenu.classList.contains('dropdown-menu')) {
             // Toggle this one
             submenu.classList.toggle('show');
-            
+
             // Close other open dropdowns (if we had siblings, useful for future)
             dropdowns.forEach(d => {
                 if (d !== submenu && d.classList.contains('show')) {
@@ -37,14 +37,14 @@ document.addEventListener('click', function(event) {
         // If clicking anywhere else in nav, maybe close dropdowns? 
         // For now, let's keep them open if clicking inside the dropdown itself
         if (!event.target.closest('.dropdown')) {
-             dropdowns.forEach(d => d.classList.remove('show'));
+            dropdowns.forEach(d => d.classList.remove('show'));
         }
     }
 });
 
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
@@ -59,7 +59,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Form submission handler
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
+    contactForm.addEventListener('submit', function (e) {
         e.preventDefault();
 
         // Get form data
@@ -72,24 +72,35 @@ if (contactForm) {
             return;
         }
 
-        // Email validation
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(data.email)) {
-            alert('Please enter a valid email address.');
+        // No strict validation to prevent friction - just ensure values exist
+        if (!data.name || !data.phone) {
+            alert('Please enter your name and phone number.');
             return;
         }
 
-        // Phone validation (Indian format)
-        const phoneRegex = /^[6-9]\d{9}$/;
-        const cleanPhone = data.phone.replace(/[\s-]/g, '');
-        if (!phoneRegex.test(cleanPhone)) {
-            alert('Please enter a valid 10-digit phone number.');
-            return;
-        }
+        // Construct WhatsApp Message
+        const whatsappNumber = '919811722287';
+        const messageParts = [
+            `*New Appointment Request*`,
+            `-----------------------------`,
+            `*Name:* ${data.name}`,
+            `*Email:* ${data.email}`,
+            `*Phone:* ${data.phone}`,
+            `*Service:* ${data.service || 'Not specified'}`,
+            `*Message:* ${data.message}`,
+            `-----------------------------`,
+            `_Sent via BhawanaNutriFit Website_`
+        ];
 
-        // Show success message (in real implementation, this would send to a server)
-        alert('Thank you for your message! We will contact you soon.');
-        this.reset();
+        const fullMessage = messageParts.join('\n');
+        const encodedMessage = encodeURIComponent(fullMessage);
+        const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+        // Redirect to WhatsApp
+        window.location.href = whatsappUrl;
+
+        // Optional: Reset form after a small delay (if the page stays open)
+        setTimeout(() => this.reset(), 1000);
     });
 }
 
